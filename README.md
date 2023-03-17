@@ -11,3 +11,10 @@
 ## seeders
 - sequelize db:seed:all, to Run every seeder
 - sequelize db:seed:undo:all, to Deletes data from the database
+
+## deployment
+- the app is deploy in this link [https://mnacfil-user-management.onrender.com/]
+- But some api does not work
+
+# I put the screenshot of result of each endpoint
+- in sample-api-test-result folder

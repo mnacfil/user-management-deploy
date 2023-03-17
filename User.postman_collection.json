@@ -1,0 +1,146 @@
+{
+	"info": {
+		"_postman_id": "1a98bc9f-35d3-4293-afd9-06c42f46bcfa",
+		"name": "User",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26397009"
+	},
+	"item": [
+		{
+			"name": "Create user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "        {\r\n            \"firstName\": \"Melvin\",\r\n            \"lastName\": \"Nacfil\",\r\n            \"address\": \"Pasay City\",\r\n            \"mobilePhone\": \"09485803262\",\r\n            \"email\": \"mnacfil@gmail.com\",\r\n            \"username\": \"mnacfil\",\r\n            \"password\": \"secret\"\r\n        }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{local_host}}/users",
+					"host": [
+						"{{local_host}}"
+					],
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all user",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "        {\r\n            \"id\": 1,\r\n            \"firstName\": \"Patricia\",\r\n            \"lastName\": \"say\",\r\n            \"address\": \"Quezon City\",\r\n            \"postCode\": \"1800\",\r\n            \"phoneNumber\": \"09485803262\",\r\n            \"email\": \"say@gmail.com\",\r\n            \"username\": \"say\",\r\n            \"password\": \"secret\"\r\n        }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{local_host}}/users",
+					"host": [
+						"{{local_host}}"
+					],
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete user by ID",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "        {\r\n            \"id\": 1,\r\n            \"firstName\": \"Patricia\",\r\n            \"lastName\": \"say\",\r\n            \"address\": \"Quezon City\",\r\n            \"postCode\": \"1800\",\r\n            \"phoneNumber\": \"09485803262\",\r\n            \"email\": \"say@gmail.com\",\r\n            \"username\": \"say\",\r\n            \"password\": \"secret\"\r\n        }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{local_host}}/users/26",
+					"host": [
+						"{{local_host}}"
+					],
+					"path": [
+						"users",
+						"26"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update user by ID",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "        {\r\n            \"firstName\": \"Patricia\",\r\n            \"lastName\": \"say\",\r\n            \"address\": \"Quezon City\",\r\n            \"postCode\": \"1800\",\r\n            \"phoneNumber\": \"09485803262\",\r\n            \"email\": \"say@gmail.com\",\r\n            \"username\": \"say24\",\r\n            \"password\": \"passw0rd\"\r\n        }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{local_host}}/users/5",
+					"host": [
+						"{{local_host}}"
+					],
+					"path": [
+						"users",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delte multiple users",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "        {\r\n            \"usersID\": [1, 2, 3]\r\n        }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{local_host}}/users/delete-multiple-user",
+					"host": [
+						"{{local_host}}"
+					],
+					"path": [
+						"users",
+						"delete-multiple-user"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
